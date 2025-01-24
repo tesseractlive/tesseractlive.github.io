@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="description" content="AI-generated website">
+      <meta name="description" content="Tesseract: One Stop Solution for your Tech">
       <meta name="theme-color" content="#ffffff">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="robots" content="index, follow">
@@ -14,7 +13,7 @@
       <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" as="style">
       
       <!-- {headerScripts} -->
-
+ 
       <!-- Core CSS -->
       <script src="https://cdn.tailwindcss.com"></script>
       <script>
@@ -144,7 +143,7 @@
           },
         }
       </script>
-
+ 
       <!-- Utilities and Components -->
       <script defer src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.13.3/cdn.min.js"></script>
       <script defer src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.45.1/apexcharts.min.js"></script>
@@ -158,15 +157,15 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
             integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
             crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+ 
       <!-- Base Styles -->
       <style>
-
+ 
       * {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;     /* Firefox */
 }
-
+ 
 /* Webkit browsers like Chrome, Safari, newer Edge */
 *::-webkit-scrollbar {
   display: none;
@@ -191,25 +190,25 @@
         ::-webkit-scrollbar-thumb:hover {
           background: #666;
         }
-
+ 
         /* Remove tap highlight on mobile */
         * {
           -webkit-tap-highlight-color: transparent;
         }
-
+ 
         /* Improve text rendering */
         body {
           text-rendering: optimizeLegibility;
           -webkit-font-smoothing: antialiased;
           -moz-osx-font-smoothing: grayscale;
         }
-
+ 
         /* Focus outline styles */
         :focus-visible {
           outline: 2px solid currentColor;
           outline-offset: 2px;
         }
-
+ 
         /* Print styles */
         @media print {
           .no-print {
@@ -221,7 +220,7 @@
           }
         }
       </style>
-
+ 
       <!-- Enhanced Image Handler -->
       <script>
         document.addEventListener('DOMContentLoaded', () => {
@@ -246,7 +245,7 @@
             rootMargin: '50px 0px',
             threshold: 0.01
           });
-
+ 
           const loadImage = (img) => {
             if ('loading' in HTMLImageElement.prototype) {
               img.loading = 'lazy';
@@ -262,7 +261,7 @@
               img.classList.remove('opacity-0');
               img.classList.add('opacity-100', 'error-image');
             };
-
+ 
             if (img.dataset.src) {
               imageObserver.observe(img);
             } else {
@@ -270,9 +269,9 @@
               img.classList.add('opacity-100');
             }
           };
-
+ 
           document.querySelectorAll('img[data-src], img:not([data-src])').forEach(loadImage);
-
+ 
           // Watch for dynamically added images
           new MutationObserver((mutations) => {
             mutations.forEach(mutation => {
@@ -290,7 +289,7 @@
             subtree: true
           });
         });
-
+ 
         // Performance monitoring
         if ('performance' in window && 'PerformanceObserver' in window) {
           // Create performance observer
@@ -308,10 +307,10 @@
               }
             });
           });
-
+ 
           // Observe performance metrics
           observer.observe({ entryTypes: ['largest-contentful-paint', 'first-input', 'layout-shift'] });
-
+ 
           // Log basic performance metrics
           window.addEventListener('load', () => {
             const timing = performance.getEntriesByType('navigation')[0];
@@ -323,7 +322,7 @@
             });
           });
         }
-
+ 
         // Handle offline/online status
         window.addEventListener('online', () => {
           document.body.classList.remove('offline');
@@ -342,22 +341,22 @@
          class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:p-4 focus:bg-white focus:text-black">
          Skip to main content
       </a>
-
+ 
       <!-- Header -->
       <header class="relative z-50 bg-white dark:bg-gray-900">
         <!-- Header content goes here -->
       </header>
-
+ 
       <!-- Main content area -->
       <main id="main-content" class="flex-1 relative ">
         <!-- Content will be injected here -->
       </main>
-
+ 
       <!-- {bodyScripts} -->
-
+ 
    </body>
 </html><element id="d6959a6f-c90d-47c3-859b-696784d19a99" data-section-id="d6959a6f-c90d-47c3-859b-696784d19a99">
-
+ 
 <htmlCode>
 <div id="root">
   <nav id="navbar" class="fixed w-full z-50 top-0 bg-neutral-900/80 backdrop-blur-sm border-b border-neutral-800">
@@ -370,7 +369,7 @@
             <span class="ml-2 text-xl font-bold text-white">Tesseract</span>
           </a>
         </div>
-
+ 
         <!-- Desktop Menu -->
         <div class="hidden md:flex items-center space-x-8">
           <a href="#services" class="text-neutral-300 hover:text-white transition-colors">Services</a>
@@ -378,7 +377,7 @@
           <a href="#insights" class="text-neutral-300 hover:text-white transition-colors">Insights</a>
           <a href="#contact" class="bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700 transition-colors">Contact Us</a>
         </div>
-
+ 
         <!-- Mobile menu button -->
         <div class="md:hidden flex items-center">
           <button id="mobile-menu-button" class="text-neutral-300 hover:text-white">
@@ -389,7 +388,7 @@
         </div>
       </div>
     </div>
-
+ 
     <!-- Mobile Menu -->
     <div id="mobile-menu" class="hidden md:hidden bg-neutral-900 border-b border-neutral-800">
       <div class="px-2 pt-2 pb-3 space-y-1">
@@ -400,27 +399,27 @@
       </div>
     </div>
   </nav>
-
+ 
   <script>
     // Mobile menu toggle
     const mobileMenuButton = document.getElementById('mobile-menu-button');
     const mobileMenu = document.getElementById('mobile-menu');
-
+ 
     mobileMenuButton.addEventListener('click', () => {
       mobileMenu.classList.toggle('hidden');
     });
-
+ 
     // Close mobile menu when clicking outside
     document.addEventListener('click', (e) => {
       if (!mobileMenuButton.contains(e.target) && !mobileMenu.contains(e.target)) {
         mobileMenu.classList.add('hidden');
       }
     });
-
+ 
     // Navbar scroll behavior
     const navbar = document.getElementById('navbar');
     let lastScroll = 0;
-
+ 
     window.addEventListener('scroll', () => {
       const currentScroll = window.pageYOffset;
       
@@ -428,7 +427,7 @@
         navbar.classList.remove('scroll-up');
         return;
       }
-
+ 
       if (currentScroll > lastScroll && !navbar.classList.contains('scroll-down')) {
         navbar.classList.remove('scroll-up');
         navbar.classList.add('scroll-down');
@@ -441,16 +440,16 @@
   </script>
 </div>
 </htmlCode></element><element id="0685f2dd-2559-4e7c-a31a-257976665c30" data-section-id="0685f2dd-2559-4e7c-a31a-257976665c30">
-
+ 
 <htmlCode>
 <div id="root">
   <section id="hero" class="min-h-screen bg-neutral-900 pt-16 relative overflow-hidden">
     <!-- Background Grid Effect -->
     <div class="absolute inset-0 bg-grid-pattern opacity-10"></div>
-
+ 
     <!-- Gradient Overlay -->
     <div class="absolute inset-0 bg-gradient-to-b from-neutral-900/50 to-neutral-900"></div>
-
+ 
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       <div class="flex flex-col items-center justify-center min-h-[80vh] text-center">
         <!-- Main Heading -->
@@ -463,12 +462,12 @@
             with scalable and innovative <br>technology solutions
           </span>
         </h1>
-
+ 
         <!-- Subtext -->
         <p class="text-xl text-neutral-300 max-w-3xl mb-8 animate__animated animate__fadeIn animate__delay-1s">
           Our team of experienced engineers from Uber, Visa, Atlassian, Goldman Sachs, Sprinklr, Wells Fargo and other top tech companies delivers high-impact results.
         </p>
-
+ 
         <!-- CTA Buttons -->
         <div class="flex flex-col sm:flex-row gap-4 animate__animated animate__fadeIn animate__delay-2s">
           <a href="#contact" class="px-8 py-3 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 transition-all transform hover:scale-105 hover:shadow-lg hover:shadow-indigo-500/50">
@@ -478,7 +477,7 @@
             Explore Our Work
           </a>
         </div>
-
+ 
         <!-- Scroll Indicator -->
         <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
           <svg class="w-6 h-6 text-neutral-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -488,7 +487,7 @@
       </div>
     </div>
   </section>
-
+ 
   <style>
     .bg-grid-pattern {
       background-image: linear-gradient(to right, rgba(255,255,255,0.1) 1px, transparent 1px),
@@ -496,7 +495,7 @@
       background-size: 30px 30px;
     }
   </style>
-
+ 
   <!-- <script>
     // Parallax effect on scroll
     window.addEventListener('scroll', () => {
@@ -507,7 +506,7 @@
   </script> -->
 </div>
 </htmlCode></element><element id="da547dc8-ba0b-405b-b0b1-cff29bf54d2b" data-section-id="da547dc8-ba0b-405b-b0b1-cff29bf54d2b">
-
+ 
 <htmlCode>
 <div id="root">
   <section id="clients" class="py-20 bg-neutral-800">
@@ -517,33 +516,33 @@
           Engineers with elite experience from
         </h2>
       </div>
-
+ 
       <div class="relative overflow-hidden">
         <div class="client-carousel flex items-center space-x-12 animate-scroll">
           <!-- Using available logos from metadata -->
           <div class="flex-shrink-0">
-            <img src="https://logo.clearbit.com/Flip.id" alt="Client Logo" class="h-16 w-auto filter grayscale hover:grayscale-0 transition-all duration-300">
+            <img src="https://helios-i.mashable.com/imagery/articles/03y6VwlrZqnsuvnwR8CtGAL/hero-image.fill.size_1248x702.v1623372852.jpg" alt="Client Logo" class="h-16 w-auto filter grayscale hover:grayscale-0 transition-all duration-300">
           </div>
           <div class="flex-shrink-0">
-            <img src="https://logo.clearbit.com/last9.io" alt="Client Logo" class="h-16 w-auto filter grayscale hover:grayscale-0 transition-all duration-300">
+            <img src="https://cdn.freebiesupply.com/logos/large/2x/visa-logo-svg-vector.svg" alt="Client Logo" class="h-16 w-auto filter grayscale hover:grayscale-0 transition-all duration-300">
           </div>
           <div class="flex-shrink-0">
-            <img src="https://logo.clearbit.com/TrustingSocial.com" alt="Client Logo" class="h-16 w-auto filter grayscale hover:grayscale-0 transition-all duration-300">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Goldman_Sachs.svg/800px-Goldman_Sachs.svg.png" alt="Client Logo" class="h-16 w-auto filter grayscale hover:grayscale-0 transition-all duration-300">
           </div>
           <div class="flex-shrink-0">
-            <img src="https://logo.clearbit.com/SecurityHQ.com" alt="Client Logo" class="h-16 w-auto filter grayscale hover:grayscale-0 transition-all duration-300">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Atlassian-logo.svg/1280px-Atlassian-logo.svg.png" alt="Client Logo" class="h-16 w-auto filter grayscale hover:grayscale-0 transition-all duration-300">
           </div>
           <div class="flex-shrink-0">
-            <img src="https://logo.clearbit.com/manatal.com" alt="Client Logo" class="h-16 w-auto filter grayscale hover:grayscale-0 transition-all duration-300">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Sprinklr_Logo.png/1200px-Sprinklr_Logo.png" alt="Client Logo" class="h-16 w-auto filter grayscale hover:grayscale-0 transition-all duration-300">
           </div>
           <div class="flex-shrink-0">
-            <img src="https://logo.clearbit.com/adplist.com" alt="Client Logo" class="h-16 w-auto filter grayscale hover:grayscale-0 transition-all duration-300">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Wells_Fargo_Logo_%282020%29.svg/1200px-Wells_Fargo_Logo_%282020%29.svg.png" alt="Client Logo" class="h-16 w-auto filter grayscale hover:grayscale-0 transition-all duration-300">
           </div>
         </div>
       </div>
     </div>
   </section>
-
+ 
   <style>
     @keyframes scroll {
       0% {
@@ -553,16 +552,16 @@
         transform: translateX(calc(-250px * 6));
       }
     }
-
+ 
     .animate-scroll {
       animation: scroll 30s linear infinite;
     }
-
+ 
     .client-carousel {
       display: flex;
       width: calc(250px * 12);
     }
-
+ 
     .client-carousel > div {
       flex: 0 0 auto;
       width: 250px;
@@ -571,25 +570,25 @@
       align-items: center;
     }
   </style>
-
+ 
   <script>
     // Clone carousel items for infinite scroll
     const carousel = document.querySelector('.client-carousel');
     const carouselContent = carousel.innerHTML;
     carousel.innerHTML = carouselContent + carouselContent;
-
+ 
     // Pause animation on hover
     carousel.addEventListener('mouseenter', () => {
       carousel.style.animationPlayState = 'paused';
     });
-
+ 
     carousel.addEventListener('mouseleave', () => {
       carousel.style.animationPlayState = 'running';
     });
   </script>
 </div>
 </htmlCode></element><element id="d9725fba-1438-4d89-971a-8bdbe829a842" data-section-id="d9725fba-1438-4d89-971a-8bdbe829a842">
-
+ 
 <htmlCode>
 <div id="root">
   <section id="challenge" class="py-20 bg-neutral-900">
@@ -606,58 +605,27 @@
             Building a startup is tough. Turning a prototype into a scalable, polished product that grows with your business is even harder. Launching features quickly, maintaining performance, and ensuring a seamless user experience are all challenges that require careful planning and execution.
           </p>
         </div>
-
+ 
         <div class="lg:pl-12 animate__animated animate__fadeInRight">
           <!-- Using an illustration from metadata -->
           <img 
             src="./Product Iteration.svg"
             alt="Building Products Illustration"
-            class="w-full h-auto rounded-lg shadow-2xl shadow-indigo-500/20 transform hover:scale-105 transition-transform duration-300"
+            class="w-full h-auto rounded-lg shadow-2xl shadow-indigo-500/20 transform transition-transform duration-300"
           />
         </div>
       </div>
-
-      <!-- Features Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
-        <div class="bg-neutral-800/50 p-6 rounded-lg border border-neutral-700 hover:border-indigo-500 transition-colors duration-300">
-          <div class="text-indigo-500 mb-4">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
-            </svg>
-          </div>
-          <h3 class="text-xl font-semibold text-white mb-2">Performance</h3>
-          <p class="text-neutral-400">Maintaining high performance while scaling your product can be challenging.</p>
-        </div>
-
-        <div class="bg-neutral-800/50 p-6 rounded-lg border border-neutral-700 hover:border-indigo-500 transition-colors duration-300">
-          <div class="text-indigo-500 mb-4">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-            </svg>
-          </div>
-          <h3 class="text-xl font-semibold text-white mb-2">Time to Market</h3>
-          <p class="text-neutral-400">Launching features quickly while maintaining quality is a delicate balance.</p>
-        </div>
-
-        <div class="bg-neutral-800/50 p-6 rounded-lg border border-neutral-700 hover:border-indigo-500 transition-colors duration-300">
-          <div class="text-indigo-500 mb-4">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-            </svg>
-          </div>
-          <h3 class="text-xl font-semibold text-white mb-2">Scalability</h3>
-          <p class="text-neutral-400">Growing your infrastructure with your user base requires careful planning.</p>
-        </div>
-      </div>
+ 
+    
     </div>
   </section>
-
+ 
   <script>
     // Intersection Observer for animation
     const observerOptions = {
       threshold: 0.1
     };
-
+ 
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -666,14 +634,14 @@
         }
       });
     }, observerOptions);
-
+ 
     document.querySelectorAll('.animate__animated').forEach((element) => {
       observer.observe(element);
     });
   </script>
 </div>
 </htmlCode></element><element id="683b71b3-d1de-4064-a37a-894cc554efdd" data-section-id="683b71b3-d1de-4064-a37a-894cc554efdd">
-
+ 
 <htmlCode>
 <div id="root">
   <section id="solution" class="py-20 bg-neutral-800">
@@ -687,40 +655,45 @@
           </span>
         </h2>
       </div>
-
-      <!-- "What if" Cards -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
-        <div class="bg-neutral-900/50 p-8 rounded-xl border border-neutral-700 hover:border-indigo-500 transition-all duration-300 transform hover:-translate-y-2 animate__animated animate__fadeInUp">
-          <div class="text-indigo-500 mb-6">
-            <img src="https://framerusercontent.com/images/6tTbkXggWgQCAJ4DO2QEdXXmgM.svg" alt="Feature Icon" class="w-12 h-12" />
+ 
+       <!-- Features Grid -->
+       <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16 mb-20">
+        <div class="bg-neutral-800/50 p-6 rounded-lg border border-neutral-700 hover:border-indigo-500 transition-colors duration-300">
+          <div class="text-indigo-500 mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
           </div>
-          <h3 class="text-xl font-semibold text-white mb-4">What if you could...</h3>
-          <p class="text-neutral-300">Release new features rapidly without breaking existing functionality?</p>
+          <h3 class="text-xl font-semibold text-white mb-2">Performance</h3>
+          <p class="text-neutral-400">Maintaining high performance while scaling your product can be challenging.</p>
         </div>
-
-        <div class="bg-neutral-900/50 p-8 rounded-xl border border-neutral-700 hover:border-indigo-500 transition-all duration-300 transform hover:-translate-y-2 animate__animated animate__fadeInUp animate__delay-1s">
-          <div class="text-indigo-500 mb-6">
-            <img src="https://framerusercontent.com/images/11KSGbIZoRSg4pjdnUoif6MKHI.svg" alt="Feature Icon" class="w-12 h-12" />
+ 
+        <div class="bg-neutral-800/50 p-6 rounded-lg border border-neutral-700 hover:border-indigo-500 transition-colors duration-300">
+          <div class="text-indigo-500 mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
           </div>
-          <h3 class="text-xl font-semibold text-white mb-4">What if you could...</h3>
-          <p class="text-neutral-300">Handle growing traffic without costly rewrites of your architecture?</p>
+          <h3 class="text-xl font-semibold text-white mb-2">Time to Market</h3>
+          <p class="text-neutral-400">Launching features quickly while maintaining quality is a delicate balance.</p>
         </div>
-
-        <div class="bg-neutral-900/50 p-8 rounded-xl border border-neutral-700 hover:border-indigo-500 transition-all duration-300 transform hover:-translate-y-2 animate__animated animate__fadeInUp animate__delay-2s">
-          <div class="text-indigo-500 mb-6">
-            <img src="https://framerusercontent.com/images/YFr5bl757a79kNidEUXyWKIQX8.jpg" alt="Feature Icon" class="w-12 h-12 rounded-lg" />
+ 
+        <div class="bg-neutral-800/50 p-6 rounded-lg border border-neutral-700 hover:border-indigo-500 transition-colors duration-300">
+          <div class="text-indigo-500 mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+            </svg>
           </div>
-          <h3 class="text-xl font-semibold text-white mb-4">What if you could...</h3>
-          <p class="text-neutral-300">Have a reliable partner to help you make informed technical decisions?</p>
+          <h3 class="text-xl font-semibold text-white mb-2">Scalability</h3>
+          <p class="text-neutral-400">Growing your infrastructure with your user base requires careful planning.</p>
         </div>
       </div>
-
       <!-- "That's Where We Come In" Section -->
       <div class="bg-neutral-900 rounded-2xl p-8 md:p-12 border border-neutral-700">
         <h2 class="text-3xl font-bold text-white mb-8 animate__animated animate__fadeIn">
           That's Where We Come In
         </h2>
-
+ 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div class="space-y-6">
             <div class="flex items-start space-x-4 animate__animated animate__fadeInLeft">
@@ -731,7 +704,7 @@
               </div>
               <p class="text-neutral-300">We specialize in helping startups build scalable, high-quality products from the ground up.</p>
             </div>
-
+ 
             <div class="flex items-start space-x-4 animate__animated animate__fadeInLeft animate__delay-1s">
               <div class="flex-shrink-0 w-8 h-8 rounded-full bg-indigo-500/20 flex items-center justify-center">
                 <svg class="w-4 h-4 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -741,7 +714,7 @@
               <p class="text-neutral-300">We help you accelerate your product roadmap with robust and maintainable architectures.</p>
             </div>
           </div>
-
+ 
           <div class="space-y-6">
             <div class="flex items-start space-x-4 animate__animated animate__fadeInRight">
               <div class="flex-shrink-0 w-8 h-8 rounded-full bg-indigo-500/20 flex items-center justify-center">
@@ -751,7 +724,7 @@
               </div>
               <p class="text-neutral-300">We ensure smooth scalability so your systems can grow without compromising performance.</p>
             </div>
-
+ 
             <div class="flex items-start space-x-4 animate__animated animate__fadeInRight animate__delay-1s">
               <div class="flex-shrink-0 w-8 h-8 rounded-full bg-indigo-500/20 flex items-center justify-center">
                 <svg class="w-4 h-4 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -765,13 +738,13 @@
       </div>
     </div>
   </section>
-
+ 
   <script>
     // Intersection Observer for animation
     const observerOptions = {
       threshold: 0.1
     };
-
+ 
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -780,14 +753,14 @@
         }
       });
     }, observerOptions);
-
+ 
     document.querySelectorAll('.animate__animated').forEach((element) => {
       observer.observe(element);
     });
   </script>
 </div>
 </htmlCode></element><element id="c28ce527-c6be-404c-b375-42299e0a1660" data-section-id="c28ce527-c6be-404c-b375-42299e0a1660">
-
+ 
 <htmlCode>
 <div id="root">
   <section id="services" class="py-20 bg-neutral-900">
@@ -796,7 +769,7 @@
         <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Our Services</h2>
         <p class="text-xl text-neutral-400">Comprehensive solutions for your technical needs</p>
       </div>
-
+ 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <!-- Service Cards -->
         <div class="service-card group">
@@ -813,7 +786,7 @@
             </div>
           </div>
         </div>
-
+ 
         <div class="service-card group">
           <div class="relative bg-neutral-800 rounded-xl p-8 border border-neutral-700 hover:border-indigo-500 transition-all duration-300 h-full transform hover:-translate-y-2">
             <div class="text-indigo-500 mb-6">
@@ -828,7 +801,7 @@
             </div>
           </div>
         </div>
-
+ 
         <div class="service-card group">
           <div class="relative bg-neutral-800 rounded-xl p-8 border border-neutral-700 hover:border-indigo-500 transition-all duration-300 h-full transform hover:-translate-y-2">
             <div class="text-indigo-500 mb-6">
@@ -843,7 +816,7 @@
             </div>
           </div>
         </div>
-
+ 
         <div class="service-card group">
           <div class="relative bg-neutral-800 rounded-xl p-8 border border-neutral-700 hover:border-indigo-500 transition-all duration-300 h-full transform hover:-translate-y-2">
             <div class="text-indigo-500 mb-6">
@@ -858,7 +831,7 @@
             </div>
           </div>
         </div>
-
+ 
         <div class="service-card group">
           <div class="relative bg-neutral-800 rounded-xl p-8 border border-neutral-700 hover:border-indigo-500 transition-all duration-300 h-full transform hover:-translate-y-2">
             <div class="text-indigo-500 mb-6">
@@ -873,7 +846,7 @@
             </div>
           </div>
         </div>
-
+ 
         <div class="service-card group">
           <div class="relative bg-neutral-800 rounded-xl p-8 border border-neutral-700 hover:border-indigo-500 transition-all duration-300 h-full transform hover:-translate-y-2">
             <div class="text-indigo-500 mb-6">
@@ -891,7 +864,7 @@
       </div>
     </div>
   </section>
-
+ 
   <script>
     // Service card click handler
     document.querySelectorAll('.service-card').forEach(card => {
@@ -900,7 +873,7 @@
         console.log('Service card clicked');
       });
     });
-
+ 
     // Intersection Observer for animation
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
@@ -910,7 +883,7 @@
         }
       });
     }, { threshold: 0.1 });
-
+ 
     document.querySelectorAll('.service-card').forEach((card, index) => {
       card.style.animationDelay = `${index * 0.2}s`;
       observer.observe(card);
@@ -918,16 +891,17 @@
   </script>
 </div>
 </htmlCode></element><element id="f95eaeca-2a05-4e54-b6e1-65b5cbfd3032" data-section-id="f95eaeca-2a05-4e54-b6e1-65b5cbfd3032">
-
+ 
 <htmlCode>
 <div id="root">
   <section id="casestudies" class="py-20 bg-neutral-800">
+    
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16 animate__animated animate__fadeIn">
         <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Case Studies</h2>
         <p class="text-xl text-neutral-400">Real solutions, real impact</p>
       </div>
-
+ 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <!-- Case Study Card 1 -->
         <div class="case-study-card group cursor-pointer animate__animated animate__fadeIn">
@@ -950,7 +924,7 @@
             </div>
           </div>
         </div>
-
+ 
         <!-- Case Study Card 2 -->
         <div class="case-study-card group cursor-pointer animate__animated animate__fadeIn">
           <div class="bg-neutral-900 rounded-xl overflow-hidden border border-neutral-700 hover:border-indigo-500 transition-all duration-300 transform hover:-translate-y-2">
@@ -972,9 +946,29 @@
             </div>
           </div>
         </div>
-
+ 
         <!-- Case Study Card 3 -->
         <div class="case-study-card group cursor-pointer animate__animated animate__fadeIn">
+          <div class="bg-neutral-900 rounded-xl overflow-hidden border border-neutral-700 hover:border-indigo-500 transition-all duration-300 transform hover:-translate-y-2">
+            <img src="https://framerusercontent.com/images/WVpXfkn57hTRl1fDq4yxJgswXw.webp" alt="Database Migration" class="w-full h-48 object-cover" />
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-white mb-3">Zero Downtime Schema Migration</h3>
+              <p class="text-neutral-400 mb-4">Handling 400M+ row database migrations with zero downtime</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-3 py-1 text-sm bg-neutral-800 text-neutral-300 rounded-full">Database</span>
+                <span class="px-3 py-1 text-sm bg-neutral-800 text-neutral-300 rounded-full">Migration</span>
+                <span class="px-3 py-1 text-sm bg-neutral-800 text-neutral-300 rounded-full">Zero Downtime</span>
+              </div>
+              <div class="flex items-center mt-4 text-indigo-500 group-hover:text-indigo-400 transition-colors">
+                <span class="mr-2">View Case Study</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+         <div class="case-study-card group cursor-pointer animate__animated animate__fadeIn">
           <div class="bg-neutral-900 rounded-xl overflow-hidden border border-neutral-700 hover:border-indigo-500 transition-all duration-300 transform hover:-translate-y-2">
             <img src="https://framerusercontent.com/images/WVpXfkn57hTRl1fDq4yxJgswXw.webp" alt="Database Migration" class="w-full h-48 object-cover" />
             <div class="p-6">
@@ -997,7 +991,7 @@
       </div>
     </div>
   </section>
-
+ 
   <script>
     // Case study card click handler
     document.querySelectorAll('.case-study-card').forEach(card => {
@@ -1006,7 +1000,7 @@
         console.log('Case study clicked');
       });
     });
-
+ 
     // Intersection Observer for animation
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
@@ -1016,7 +1010,7 @@
         }
       });
     }, { threshold: 0.1 });
-
+ 
     document.querySelectorAll('.case-study-card').forEach((card, index) => {
       card.style.animationDelay = `${index * 0.2}s`;
       observer.observe(card);
@@ -1024,7 +1018,7 @@
   </script>
 </div>
 </htmlCode></element><element id="0c832df6-936e-4e5b-b2d2-4d4e5b2567bd" data-section-id="0c832df6-936e-4e5b-b2d2-4d4e5b2567bd">
-
+ 
 <htmlCode>
 <div id="root">
   <section id="insights" class="py-20 bg-neutral-900">
@@ -1033,15 +1027,15 @@
         <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Latest Insights</h2>
         <p class="text-xl text-neutral-400">Explore our technical insights and industry expertise</p>
       </div>
-
+ 
       <!-- Categories -->
-      <div class="flex flex-wrap justify-center gap-4 mb-12">
+      <!-- <div class="flex flex-wrap justify-center gap-4 mb-12">
         <button class="px-6 py-2 rounded-full bg-indigo-600 text-white hover:bg-indigo-700 transition-colors">All</button>
         <button class="px-6 py-2 rounded-full bg-neutral-800 text-neutral-300 hover:bg-neutral-700 transition-colors">Tech Insights</button>
         <button class="px-6 py-2 rounded-full bg-neutral-800 text-neutral-300 hover:bg-neutral-700 transition-colors">Startup Solutions</button>
         <button class="px-6 py-2 rounded-full bg-neutral-800 text-neutral-300 hover:bg-neutral-700 transition-colors">Case Studies</button>
-      </div>
-
+      </div> -->
+ 
       <!-- Blog Posts Grid -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <!-- Blog Post 1 -->
@@ -1066,7 +1060,7 @@
             </div>
           </div>
         </article>
-
+ 
         <!-- Blog Post 2 -->
         <article class="blog-card group animate__animated animate__fadeIn">
           <div class="bg-neutral-800 rounded-xl overflow-hidden border border-neutral-700 hover:border-indigo-500 transition-all duration-300 transform hover:-translate-y-2">
@@ -1089,7 +1083,7 @@
             </div>
           </div>
         </article>
-
+ 
         <!-- Blog Post 3 -->
         <article class="blog-card group animate__animated animate__fadeIn">
           <div class="bg-neutral-800 rounded-xl overflow-hidden border border-neutral-700 hover:border-indigo-500 transition-all duration-300 transform hover:-translate-y-2">
@@ -1113,16 +1107,16 @@
           </div>
         </article>
       </div>
-
+ 
       <!-- View More Button -->
-      <div class="text-center mt-12">
+      <!-- <div class="text-center mt-12">
         <button class="px-8 py-3 bg-neutral-800 text-white rounded-md hover:bg-neutral-700 transition-all transform hover:scale-105 border border-neutral-700 hover:border-neutral-600">
           View More Insights
         </button>
-      </div>
+      </div> -->
     </div>
   </section>
-
+ 
   <script>
     // Blog card click handler
     document.querySelectorAll('.blog-card').forEach(card => {
@@ -1131,7 +1125,7 @@
         console.log('Blog post clicked');
       });
     });
-
+ 
     // Intersection Observer for animation
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
@@ -1141,7 +1135,7 @@
         }
       });
     }, { threshold: 0.1 });
-
+ 
     document.querySelectorAll('.blog-card').forEach((card, index) => {
       card.style.animationDelay = `${index * 0.2}s`;
       observer.observe(card);
@@ -1149,7 +1143,7 @@
   </script>
 </div>
 </htmlCode></element><element id="485b58cb-32bb-41e7-8eda-23da4192e179" data-section-id="485b58cb-32bb-41e7-8eda-23da4192e179">
-
+ 
 <htmlCode>
 <div id="root">
   <section id="contact" class="py-20 bg-neutral-800">
@@ -1170,6 +1164,18 @@
           <div class="space-y-6">
             <div class="flex items-center space-x-4">
               <div class="w-12 h-12 bg-neutral-700 rounded-full flex items-center justify-center">
+              <a href="#" class="text-neutral-400 hover:text-indigo-500 transition-colors">
+                <svg class="w-6 h-6 text-indigo-500" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+</a>
+              </div>
+              <div class="w-12 h-12 bg-neutral-700 rounded-full flex items-center justify-center">
+                <a href="#" class="text-neutral-400 hover:text-indigo-500 transition-colors">
+                  <svg class="w-6 h-6 text-indigo-500" fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
+                </a>
+                </div>
+            </div>
+            <div class="flex items-center space-x-4">
+              <div class="w-12 h-12 bg-neutral-700 rounded-full flex items-center justify-center">
                 <svg class="w-6 h-6 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
                 </svg>
@@ -1179,7 +1185,7 @@
                 <p class="text-neutral-400">contact@tesseract.tech</p>
               </div>
             </div>
-
+ 
             <div class="flex items-center space-x-4">
               <div class="w-12 h-12 bg-neutral-700 rounded-full flex items-center justify-center">
                 <svg class="w-6 h-6 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -1194,7 +1200,7 @@
             </div>
           </div>
         </div>
-
+ 
         <!-- Contact Form -->
         <div class="bg-neutral-900 p-8 rounded-xl border border-neutral-700 animate__animated animate__fadeInRight">
           <form class="space-y-6">
@@ -1202,22 +1208,22 @@
               <label class="block text-sm font-medium text-neutral-300 mb-2">Name</label>
               <input type="text" class="w-full px-4 py-3 bg-neutral-800 border border-neutral-700 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent text-white" placeholder="Your name">
             </div>
-
+ 
             <div>
               <label class="block text-sm font-medium text-neutral-300 mb-2">Email</label>
               <input type="email" class="w-full px-4 py-3 bg-neutral-800 border border-neutral-700 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent text-white" placeholder="your@email.com">
             </div>
-
+ 
             <div>
               <label class="block text-sm font-medium text-neutral-300 mb-2">Company</label>
               <input type="text" class="w-full px-4 py-3 bg-neutral-800 border border-neutral-700 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent text-white" placeholder="Your company">
             </div>
-
+ 
             <div>
               <label class="block text-sm font-medium text-neutral-300 mb-2">Message</label>
               <textarea rows="4" class="w-full px-4 py-3 bg-neutral-800 border border-neutral-700 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent text-white" placeholder="Tell us about your project"></textarea>
             </div>
-
+ 
             <button type="submit" class="w-full py-3 px-6 bg-indigo-600 hover:bg-indigo-700 text-white font-medium rounded-lg transition-colors duration-200 transform hover:scale-105">
               Send Message
             </button>
@@ -1226,7 +1232,7 @@
       </div>
     </div>
   </section>
-
+ 
   <script>
     // Form validation
     const form = document.querySelector('form');
@@ -1235,7 +1241,7 @@
       // Add your form submission logic here
       console.log('Form submitted');
     });
-
+ 
     // Intersection Observer for animation
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
@@ -1245,14 +1251,14 @@
         }
       });
     }, { threshold: 0.1 });
-
+ 
     document.querySelectorAll('.animate__animated').forEach((element) => {
       observer.observe(element);
     });
   </script>
 </div>
 </htmlCode></element><element id="35da00b4-fc57-471e-bbf5-e9902074a42b" data-section-id="35da00b4-fc57-471e-bbf5-e9902074a42b">
-
+ 
 <htmlCode>
 <div id="root">
   <footer id="footer" class="bg-neutral-900 pt-20 pb-10">
@@ -1279,7 +1285,7 @@
             </a>
           </div>
         </div>
-
+ 
         <!-- Quick Links -->
         <div>
           <h3 class="text-white font-semibold mb-6">Quick Links</h3>
@@ -1290,7 +1296,7 @@
             <li><a href="#contact" class="text-neutral-400 hover:text-indigo-500 transition-colors">Contact</a></li>
           </ul>
         </div>
-
+ 
         <!-- Services -->
         <div>
           <h3 class="text-white font-semibold mb-6">Services</h3>
@@ -1301,7 +1307,7 @@
             <li><a href="#" class="text-neutral-400 hover:text-indigo-500 transition-colors">Cloud Solutions</a></li>
           </ul>
         </div>
-
+ 
         <!-- Contact -->
         <div>
           <h3 class="text-white font-semibold mb-6">Contact</h3>
@@ -1318,7 +1324,7 @@
           </ul>
         </div>
       </div>
-
+ 
       <!-- Bottom Bar -->
       <div class="pt-8 border-t border-neutral-800">
         <div class="flex flex-col md:flex-row justify-between items-center">
@@ -1334,7 +1340,7 @@
       </div>
     </div>
   </footer>
-
+ 
   <script>
     // Smooth scroll for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
